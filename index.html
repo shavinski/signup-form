@@ -13,13 +13,13 @@
     <div class="signup-page-container">
 
         <div class="left-container">
-            <!-- <div class="background-container"> -->
-                <img src="images/nate-rayfield-unsplash.jpg" alt="Milky way galaxy" class="background-picture">
-                <div class="logo-banner">
-                    <img class='odin-logo' src="images/odin-lined.png" alt="Odin project logo"> 
-                    <h1 class="profever">Profever</h1>
-                </div>
-            <!-- </div> -->
+            <div class="logo-banner">
+                <img class='logo-img'src="images/odin-lined.png" alt="Odin project logo"> 
+                <h1 class = 'logo-text'>Odin</h1>
+            </div>
+
+            <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Hailie West</a> on <a href="https://unsplash.com/"> Unsplash</a> </p>
+            
         </div>
 
 
@@ -35,33 +35,40 @@
             </div>
 
             <div class="form-content">
-                <h3>Let's do this!</h3>
+                <h3 class="form-head">Let's do this!</h3>
 
-                <form method="post">
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first_name" name="first_name"/>
+                <form method="post" class="form-container">
+                    <div class="name-inputs">
+                        <label for="first_name">First name</label>
+                        <input type="text" id="first_name" name="first_name"/>
 
-                    <label for="last_name">Last name</label>
-                    <input type="text" id="last_name" name="last_name"/>
+                        <label for="last_name">Last name</label>
+                        <input type="text" id="last_name" name="last_name"/>
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"/>
+                    <div class="contact-inputs">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"/>
 
-                    <label for="phone_number">Phone number</label>
-                    <input type="tel" name="phone_number" id="phone_number">
+                        <label for="phone_number">Phone number</label>
+                        <input type="tel" name="phone_number" id="phone_number">
+                    </div>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <div class="password-inputs">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
 
-                    <label for="confirm_password">Confirm password</label>
-                    <input type="password" name="confirm_password" id="confirm_password">
-                    
+                        <label for="confirm_password">Confirm password</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+
                 </form>
+
+
             </div>
 
             <div class="bottom-content">
                 <button type="submit">Create Account</button>
-
                 <p>Already have and account? Log in</p>
             </div>
         </div>

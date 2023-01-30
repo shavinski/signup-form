@@ -1,52 +1,69 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(Fonts/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
-    padding: 0;
 }
 
 .signup-page-container {
     display: flex;
-    flex-direction: row;
     /* position: absolute; */
 }
 
 .left-container {
     display: flex;
-}
-
-.background-picture {
-    position: relative;
-    max-width: 40vw;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+    background-position: center;
+    background-size: cover  ;
     max-height: 100vh;
+    max-width: 40vw;
+    text-align: center;
 }
 
-.logo-banner {
-    position: absolute;
+.logo-banner { 
+    background-color: rgb(0, 0, 0, .7);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
-    background-color: rgb(0, 0, 0, .7);
-    margin-top: 15rem;
-    min-width: 40vw;
-    padding: 1em;
+    gap: 1rem;
+    max-width: 40vw;
+    max-height: 40vh;
+    margin-top: 20vh; 
 }
 
-.profever {
+.banner img {
+    max-height: 10rem;
+}
+
+.logo-text {
     color: white;
-    font-size: 5rem;
-    font-family: 'Times New Roman', Times, serif
+    font-size: 7rem;
+    font-family: Norse;
+}
+.logo-img {
+    max-height: 10em;
 }
 
-.odin-logo {
-    height: 10em;
-    max-width: 10rem;
+.credit {
+    color: rgb(232, 232, 232);
+}
+
+a {
+    color: rgb(222, 222, 222);
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    width: 60vw;
+    flex: 5;
+    max-width: 60vw;
+    max-height: 100vh;
 }
 
 .top-content, .form-content, .bottom-content {
@@ -54,38 +71,88 @@
 }
 
 .top-content {
-    background-color: grey;
-    margin: 0;
-    height: 33vh;
+    background-color: rgb(218, 218, 218);
+    /* margin: 0; */
+    height: 25vh;
     font-size: 30px;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center; 
     flex-flow: column;
     gap: 30px;
 }
 
 .first-para, .second-para {
-    padding-left: 3em;
+    color: rgb(0, 0, 0);
+    padding-left: 1.5em;
     display: left;
     font-weight: 800;
-
+    font-size: 1.5rem;
+    padding: 0 2em;
 }
 
 .first-para {
     padding-top: 3em;
-    max-width: 50ch;
+    max-width: 30vw;
+    min-width: 30ch;
 }
 
 .second-para {
-    
+    margin-bottom: 1em;
+}
+
+
+.form-head {
+    font-size: 1.5em;
+    margin: 1.5em 0em;
 }
 
 .form-content {
-    padding-left: 3em;
-    flex-flow: column;
-    background-color: lightblue;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 0 3em; 
     height: 33vh;
+}
 
+.form-container {
+    background-color: rgb(204, 204, 204);
+    max-width: 70vw;
+    box-shadow:inset;
+    border-color: black;
+    border-radius: .3em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-inputs, .contact-inputs, .password-inputs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;    
+    margin: 1.5em;
+    gap: 2em;
+}
+
+
+/* .contact-inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+    margin: 1.5em;
+    gap: 2em;
+}
+
+.password-inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+    margin: 1.5em;
+    gap: 2em;
+} */
+
+input {
+    padding: .4em;
 }
 
 .bottom-content {
