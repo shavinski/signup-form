@@ -12,3 +12,6 @@ Starting to understand rem and em, vh, vw a bit more
 Still not perfect, but it makes more sense now
 Now struggling with designing a good looking form.
 Problem with the page not going all the way down to the bottom and there is white spice that wont go away.
+
+1/30/23
+Struggling with design of form, figuring out styling them is not fun
