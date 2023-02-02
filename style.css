@@ -61,7 +61,7 @@
 }
 
 .top-content {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(255, 255, 255);
     min-height: 30vh;
     padding-left: 3em;   
 }
@@ -72,13 +72,14 @@
 
 .first-para, .second-para {
     font-family:Arial, Helvetica, sans-serif ;
-    font-size: calc(.55vw + .55vh + 1vmin);
+    /* font-size: calc(.55vw + .55vh + 1vmin); */
+    font-size: 1.45em;
     padding-bottom: 1em;
-    max-width: 54ch;
+    max-width: 65%;
     font-weight: 600;
 }
 
-.form-content {
+.inputs {
     position: relative;
     background-color: rgb(255, 255, 255);
     min-height: 36vh;
@@ -88,17 +89,15 @@
 
 }
 
-.form-content > h3 {
+form {
+    display: block;
+}
+
+.inputs h3 {
     font-family:Arial, Helvetica, sans-serif ;
     font-size: calc(.55vw + .55vh + 1vmin);
     padding-bottom: 2vh;
     font-weight: 600;
-
-}
-
-.form-containter {
-    display: flex;
-    /* column-gap: 10em; */
 }
 
 input, label {
@@ -115,9 +114,22 @@ label {
 }
 
 input {
-    padding: .2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: 3px solid #E5E7EB;
+    border-radius: 5px;
+    padding: .5em;
     width: 12vw;
+    transition: 0.3s;
+    outline: none;
 }
+
+input:focus {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    border: 3px solid #3672ea;
+}
+
 
 .row1, .row2, .row3 {
     display: flex;
@@ -125,40 +137,60 @@ input {
 }
 
 
-.bottom-content {
-    background-color: rgb(247, 247, 247);
-    min-height:27vh;
-    padding-left: 3em;
-    padding-top: 3vh;
-}
-
-.bottom-content > button {
+.submit {
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     background-color: #596D48;
     border-radius: 10px;
     border: none;
     font-size: calc(.6vw + .3vh + .5vmin);
     color: white;
-    width: 12vw;
-    height: 5vh;
+    min-width: 12vw;
+    min-height: 5vh;
+    margin-top: 2em;
+    margin-left: 2em;
+
 }
 
-.bottom-content > button:hover {
+.submit:hover {
+    font-weight: 700;
     cursor: pointer;
     color: black;
-    background-color: #a3e466;
+    background-color: #99c570;
 }
 
-.bottom-content > p {
+.login {
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 3vh;
+    padding-top: calc(2vh + 1vmin);
     font-size: calc(.5vw + .3vh + .5vmin);
     font-weight: 500;
+    margin-left: 2em;
 }
 
-.bottom-content a {
+.login a{
     color: #596D48;
     text-decoration: none;
     font-weight: 600;
+}
+
+.login a:hover {
+    color: #99c570;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+#conf-pwd:invalid, #pwd:invalid {
+    border: 3px dashed red;
+}
+ 
+#conf-pwd  input:valid, #pwd input:valid {
+    border: 3px solid rgb(0, 255, 13);    
+} 
+
+#conf-pwd:focus, #pwd:focus {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    border: 3px solid #3672ea;
 }
 
