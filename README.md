@@ -15,3 +15,6 @@ Problem with the page not going all the way down to the bottom and there is whit
 
 1/30/23
 Figuring out form design is harder than i thought
+
+2/2/23
+Restarted my whole format of css and responsive design is not hard i just made it harder than I was supposed to. Ended being easier once I realized what I was doing to the website. Add javascirpt to confirm passwords and gives an alert that passwords match upon submitting. Would like to learn how to make the password boxes green if both of them match but could not figure it out. Overall better attempt doing it a second time.

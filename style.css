@@ -180,7 +180,22 @@ input:focus {
 }
 
 
-#conf-pwd:invalid, #pwd:invalid {
+
+.password-error {
+    border: 3px dotted red;
+}
+
+.password-errortxt {
+    margin-top: 5px;
+    color: red;
+    font-family: Norse;
+}
+
+.password-match {
+    border: 3px solid rgb(0, 250, 0);
+}
+
+/* #conf-pwd:invalid, #pwd:invalid {
     border: 3px dashed red;
 }
  
@@ -193,4 +208,4 @@ input:focus {
     transition: 0.3s;
     border: 3px solid #3672ea;
 }
-
+ */
